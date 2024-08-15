@@ -52,7 +52,7 @@ export function Produto({ data, onDelete, onSelect, isSelected }) {
                 {data.quantidade} - {data.nome}
             </Text>
             <TouchableOpacity onPress={onDelete} >
-                <MaterialIcons name="delete" size={24} color="red" />
+                <MaterialIcons name="delete" size={24} color="black" />
             </TouchableOpacity>
         </Pressable>
     );
@@ -60,7 +60,7 @@ export function Produto({ data, onDelete, onSelect, isSelected }) {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "#CECECE",
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
         padding: 24,
         borderRadius: 5,
         gap: 12,
@@ -73,4 +73,5 @@ const styles = StyleSheet.create({
     text: {
         flex: 1,
     },
+   
 });
